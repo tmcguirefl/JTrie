@@ -21,8 +21,8 @@ Insertion therefore needs a string and an integer to insert into the trie.
 'snow' strval_ins 5
 ### lookup/retrieval
 naive look up takes advantage that once you transition to the failure state (state 0) you will always stay there (there is no transition out). 
-Therefore you just process the whole string character by character and if the final state is 0 it is an string token unknown to the trie. This
-method allows the use of the J verb '\' to be the basis of the look up. 
+Therefore you just process the whole string character by character and if the final state is 0 ,it is a string token unknown to the trie. This
+method allows the use of the J verb '\\' to be the basis of the look up. 
 
 naive_tok '<your_string>'
 
