@@ -13,4 +13,4 @@ jtrie.ijs
 
 RELEASE=: 'j906'
 
-FOLDER=: 'tmcguirefl/jtrie.ijs'
+FOLDER=: 'tmcguirefl/jtrie'
