@@ -8,7 +8,7 @@ columns are alphabet for the domain of recognized words
 VERSION=: '1.0.1'
 
 FILES=: 0 : 0
-trie.ijs
+jtrie.ijs
 )
 
 RELEASE=: 'j906'
