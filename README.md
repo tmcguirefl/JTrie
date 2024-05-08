@@ -34,3 +34,10 @@ the routine ftok that has the same usage profile as naive_tok:
 
 ftok '<your_string>'
 
+## Installation
+In your J session type the following lines:
+   install 'github:tmcguirefl/JTrie@main'
+   load 'tmcguirefl/jtrie'
+
+That will install the code in your J session. don't forget to destroy your objects when you are done
+
