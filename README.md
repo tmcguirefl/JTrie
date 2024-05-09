@@ -11,9 +11,9 @@ In the J. Aoe et al description of the simple multidimensional implementation th
 Since J's index origin is 0, row 0 is the failure state. All enteries in row 0 will be 0. Column 0 will hold the integer value of a string token.
 So if your final state transition (call it state 'n') is a recognition state then the cell (n,0) will hold the integer value of the token.
 ## Installation
-In your J session type the following lines:
+In your J session type the following lines: <br>
    install 'github:tmcguirefl/JTrie@main'
-   load 'tmcguirefl/jtrie'
+   load 'tmcguirefl/jtrie' <br>
 
 That will install the code in your J session. don't forget to destroy your objects when you are done
 ## Usage
