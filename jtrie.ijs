@@ -18,10 +18,21 @@ NB. x - 1 for sparse matrix; 0 for full matrix
 NB. y - the alphabet to use with this trie
 create=: 3 : 0
 'sparse alphabet' =: y NB. '#ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+
+NB. Since column 0 in the trie will hold a token for a recognition state
+NB. put an unlikely to be used character at the front of the alphabet.
+NB. for the purpose of recognizing single words a space would be guarenteed not
+NB. to be used
+alphabet =: ' ',alphabet
+
+NB. make the trierow one larger than the number of characters in the alphabet
+NB. this is because i. will give index 1 larger than number of characters for
+NB. characters not in the alphabet. Therefore any non-alphabet character will
+NB. cause a transition to the failure state
 if. sparse do.
-  trierow =: $. (1,#alphabet)$INTEGERZERO
+  trierow =: $. (1,1+#alphabet)$INTEGERZERO
 else.
-  trierow =: (1,#alphabet)$INTEGERZERO
+  trierow =: (1,1+#alphabet)$INTEGERZERO
 end.
   
 trie =: trierow,trierow
