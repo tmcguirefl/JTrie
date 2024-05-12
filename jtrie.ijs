@@ -48,7 +48,6 @@ codestroy''   NB. release the instance, when it finishes execution
 
 char_ins=: 3 : 0
 next_state =. (<current_state,alphabet i. y){trie
-smoutput next_state
 if. INTEGERZERO = next_state do.
   NB. adding in new transition
   trie =: trie,trierow
