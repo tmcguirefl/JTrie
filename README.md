@@ -12,8 +12,8 @@ Since J's index origin is 0, row 0 is the failure state. All enteries in row 0 w
 So if your final state transition (call it state 'n') is a recognition state then the cell (n,0) will hold the integer value of the token.
 ## Installation
 In your J session type the following lines: <br>
-   install 'github:tmcguirefl/JTrie@main'
-   load 'tmcguirefl/jtrie' <br>
+   install 'github:tmcguirefl/JTrie@main'<br>
+   load 'tmcguirefl/jtrie/jtrie.ijs' <br>
 
 That will install the code in your J session. don't forget to destroy your objects when you are done
 ## Usage
